@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my simple homepage, where I put up blogs about different topics from computer science and reference to my projects.
+This is my simple [homepage](https://kotchourko-serge.de/), where I put up blogs about different topics from computer science and reference to my projects.
 
 ![Homepage](data/readme/homepage.png)
 
