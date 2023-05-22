@@ -1,0 +1,59 @@
+@tailwind components;
+
+@layer components {
+
+    .markdown-page {
+        @apply max-w-none overflow-auto font-monserrat  break-words
+        prose
+        prose-headings:font-bold
+        prose-h1:text-3xl
+        prose-h2:text-2xl 
+        prose-h3:text-xl 
+        
+        prose-blockquote:text-gray-500
+
+        marker:prose-ul:text-gray-500
+        marker:prose-ol:text-gray-500
+
+        prose-hr:border-t-2 prose-hr:text-gray-500
+
+        prose-img:mx-auto
+
+        prose-pre:bg-black
+
+        prose-strong:font-bold
+        prose-em:italic
+    }
+
+    .markdown-legal {
+        @apply max-w-none overflow-auto font-monserrat  break-words
+        prose
+        prose-headings:font-bold
+        prose-h1:text-3xl
+        prose-h2:text-2xl 
+        prose-h3:text-xl 
+        
+        prose-blockquote:text-gray-500
+
+        marker:prose-ul:text-gray-500
+        marker:prose-ol:text-gray-500
+
+        prose-hr:border-t-2 prose-hr:text-gray-500
+
+        prose-img:mx-auto
+
+        prose-pre:bg-inherit
+        prose-pre:text-inherit
+
+        prose-strong:font-bold
+        prose-em:italic
+    }
+
+    .markdown-preview {
+        @apply max-w-none overflow-auto font-monserrat text-secondary break-words
+        prose opacity-75 text-lg
+        prose-h1:text-lg prose-h1:my-0
+        prose-h2:text-base prose-h2:my-0  
+        prose-p:my-2
+    }
+}
