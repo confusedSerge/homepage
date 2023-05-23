@@ -7,7 +7,7 @@ import { GitHub, LinkedIn, Notes } from "iconoir-react";
 
 export default function About() {
     return (
-        <div className="flex flex-col my-16 xl:m-auto justify-center items-center">
+        <div className="flex flex-col my-16 xl:m-auto xl:py-16 justify-center items-center">
 
             <Head>
                 <title>Kotchourko: About</title>

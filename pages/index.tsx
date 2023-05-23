@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="flex flex-col xl:flex-row my-16 xl:m-auto justify-center items-center">
+        <div className="flex flex-col xl:flex-row my-16 xl:m-auto xl:py-16 justify-center items-center">
 
             {/* Image growing evenly */}
             <div className="flex flex-grow xl:mr-16 ">

@@ -17,7 +17,7 @@ module.exports = {
             colors: {
 
                 // greener
-                "primary": "#ffffff",
+                "primary": "#FFFFFF",
                 "secondary": "#000000",
 
                 "accent-light": "#eeffdd",

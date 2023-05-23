@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     {/* favicon */}
                     <link rel="icon" href="/favicon.svg" />
                     {/* Description */}
-                    <meta name="description" content="Kotchourko's personal website/homepage" />
+                    <meta name="description" content="Serge Kotchourko's personal website/homepage" />
 
                     {/* TODO: Add embedding information */}
                 </Head>
