@@ -25,12 +25,12 @@ module.exports = {
                 "accent-dark": "#084455",
 
                 // greeny
-                // "primary": "#f5f5f5",
+                // "primary": "#f9f9f9",
                 // "secondary": "#000000",
 
-                // "accent-light": "#8db48e",
-                // "accent": "#8db48e",
-                // "accent-dark": "#4d724d",
+                // "accent-light": "#008e54",
+                // "accent": "#66ddbb",
+                // "accent-dark": "#084455",
 
             },
 

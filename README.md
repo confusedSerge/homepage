@@ -14,7 +14,7 @@ If you want to run the homepage locally, you can do so by cloning this repositor
 
 ## License
 
-License to my code can be found [here](LICENSE). The licenses for the libraries used can be found in the [LICENSE.DEPENDENCIES.md](LICENSE.DEPENDENCIES.md) file.
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details. Note that this only extends to my code and other modules, fonts, etc. are licensed under their respective licenses and do not fall under this license. You can find the licenses of the different modules [here](/LICENSE.DEPENDENCIES.md). If you find any license violations, please contact me immediately, as this is not intended.
 
 ## Contributing
 
