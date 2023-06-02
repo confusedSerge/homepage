@@ -53,13 +53,13 @@ export default function About() {
 
 
                 <div className="flex flex-grow aspect-square justify-center items-center bg-accent-light rounded-full min-w-max hover:scale-110 transition-all duration-500">
-                    <Link href="https://www.linkedin.com/in/serge-kotchourko-1859b8128/">
+                    <Link href="https://www.linkedin.com/in/kotchourko-serge/">
                         <LinkedIn className="text-5xl p-4 2xl:text-7xl 2xl:p-8 text-center" />
                     </Link>
                 </div>
 
                 <div className="flex flex-grow aspect-square justify-center items-center bg-accent-light rounded-full min-w-max hover:scale-110 transition-all duration-500">
-                    <a href="/pdf/ResumeCV.pdf" target="_blank">
+                    <a href="/pdf/resume.pdf" target="_blank">
                         <Notes className="text-5xl p-4 2xl:text-7xl 2xl:p-8 text-center" />
                     </a>
                 </div>
