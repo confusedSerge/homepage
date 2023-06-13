@@ -14,11 +14,11 @@ const BlogCard: React.FC<IBlogCardProps> = ({ blog, tagOnClickBehavior }) => {
     return (
         <Link href={`/blog/${blog.id}`} passHref>
             <div className="flex flex-row group relative">
-                <div className="absolute w-fit h-full -left-16 aspect-square rounded-full  group-hover:bg-accent-light transition-all duration-500" />
+                <div className="absolute w-fit h-full -left-16 aspect-square rounded-full  group-hover:bg-accent transition-all duration-500" />
 
                 <div className="w-full flex flex-col py-8 cursor-pointer overflow-hidden z-10">
                     <div className="flex flex-row items-center">
-                        <div className="flex font-bold text-secondary text-2xl">
+                        <div className="flex font-bold text-2xl">
                             {blog.title.toUpperCase()}
                         </div>
                     </div>
@@ -47,7 +47,7 @@ const BlogCard: React.FC<IBlogCardProps> = ({ blog, tagOnClickBehavior }) => {
                             </span>
                             {blog.tags.map((tag) => {
                                 return (
-                                    <span key={blog.id.toString() + tag} className="cursor-pointer bg-black bg-opacity-5 hover:bg-accent-light transition-all duration-500 rounded-full px-2 mr-2"
+                                    <span key={blog.id.toString() + tag} className="cursor-pointer bg-black bg-opacity-5 hover:bg-accent transition-all duration-500 rounded-full px-2 mr-2"
                                         onClick={(event: any) => {
                                             event.preventDefault();
                                             tagOnClickBehavior(tag)

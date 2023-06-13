@@ -14,7 +14,7 @@ export default function BlogPage({ blog }: { blog: Blog }) {
             </Head>
 
             <div className="flex relative">
-                <div className="absolute w-fit h-full -left-16 aspect-square rounded-full  bg-accent-light" />
+                <div className="absolute w-fit h-full -left-16 aspect-square rounded-full  bg-accent" />
 
                 <div className="py-8 z-10">
                     <h1 className="text-5xl font-bold">{blog.title}</h1>
@@ -41,7 +41,7 @@ export default function BlogPage({ blog }: { blog: Blog }) {
                             </span>
                             {blog.tags.map((tag) => {
                                 return (
-                                    <span key={blog.id.toString() + tag} className="cursor-default bg-black bg-opacity-5 hover:bg-accent-light transition-all duration-500 rounded-full px-2 mr-2">
+                                    <span key={blog.id.toString() + tag} className="cursor-default bg-black bg-opacity-5 hover:bg-accent transition-all duration-500 rounded-full px-2 mr-2">
                                         {tag}
                                     </span>
                                 )

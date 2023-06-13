@@ -22,7 +22,7 @@ export default function About() {
                     as I find these topics particularly interesting because their potential is enormous and growing in importance every day.
                 </div>
 
-                <div className="flex w-48 h-48 2xl:w-72 2xl:h-72 aspect-square justify-center items-center bg-accent-light rounded-full">
+                <div className="flex w-48 h-48 2xl:w-72 2xl:h-72 aspect-square justify-center items-center bg-accent rounded-full">
                     <h1 className="text-ellipsis font-black text-4xl 2xl:text-6xl p-6 text-center">ABOUT ME</h1>
                 </div>
 
@@ -30,7 +30,7 @@ export default function About() {
 
             <div className="flex flex-col mt-16 xl:flex-row items-center">
 
-                <div className="flex w-48 h-48 2xl:w-72 2xl:h-72 aspect-square justify-center items-center bg-accent-light rounded-full">
+                <div className="flex w-48 h-48 2xl:w-72 2xl:h-72 aspect-square justify-center items-center bg-accent rounded-full">
                     <h1 className="text-ellipsis font-black text-4xl 2xl:text-6xl p-6 text-center">BLOG</h1>
                 </div>
 
@@ -45,20 +45,20 @@ export default function About() {
             {/* Icon row with links */}
             <div className="flex flex-row space-x-8 my-16">
 
-                <div className="flex flex-grow aspect-square justify-center items-center bg-accent-light rounded-full min-w-max group hover:scale-110 transition-all duration-500">
+                <div className="flex flex-grow aspect-square justify-center items-center bg-accent rounded-full min-w-max group hover:scale-110 transition-all duration-500">
                     <Link href="https://github.com/confusedSerge">
                         <GitHub className="text-5xl p-4 2xl:text-7xl 2xl:p-8 text-center" />
                     </Link>
                 </div>
 
 
-                <div className="flex flex-grow aspect-square justify-center items-center bg-accent-light rounded-full min-w-max hover:scale-110 transition-all duration-500">
+                <div className="flex flex-grow aspect-square justify-center items-center bg-accent rounded-full min-w-max hover:scale-110 transition-all duration-500">
                     <Link href="https://www.linkedin.com/in/kotchourko-serge/">
                         <LinkedIn className="text-5xl p-4 2xl:text-7xl 2xl:p-8 text-center" />
                     </Link>
                 </div>
 
-                <div className="flex flex-grow aspect-square justify-center items-center bg-accent-light rounded-full min-w-max hover:scale-110 transition-all duration-500">
+                <div className="flex flex-grow aspect-square justify-center items-center bg-accent rounded-full min-w-max hover:scale-110 transition-all duration-500">
                     <a href="/pdf/resume.pdf" target="_blank">
                         <Notes className="text-5xl p-4 2xl:text-7xl 2xl:p-8 text-center" />
                     </a>

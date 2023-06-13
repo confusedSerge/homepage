@@ -48,7 +48,7 @@ export default function Blog({ blogHeaders }: { blogHeaders: BlogHead[] }) {
             <div className="flex flex-col sm:flex-row w-full ">
 
                 <div className="flex flex-grow">
-                    <div className="flex aspect-square justify-center items-center bg-accent-light rounded-full min-w-max">
+                    <div className="flex aspect-square justify-center items-center bg-accent rounded-full min-w-max">
                         <Search className="text-5xl p-4 text-center" />
                     </div>
                     <input className="flex w-full px-4 bg-inherit focus:outline-none font-bold text-secondary text-xl" type="text" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)} />
@@ -56,7 +56,7 @@ export default function Blog({ blogHeaders }: { blogHeaders: BlogHead[] }) {
                 </div>
 
                 <div className="flex mt-4 sm:mt-0 sm:ml-4 space-x-4">
-                    <button className="flex aspect-square justify-center items-center bg-accent-light rounded-full min-w-max" onClick={() => setDateDesc(!dateDesc)}>
+                    <button className="flex aspect-square justify-center items-center bg-accent rounded-full min-w-max" onClick={() => setDateDesc(!dateDesc)}>
                         <Calendar className="text-5xl p-4 text-center hover:rotate-90 transition-transform" />
                     </button>
                 </div>
@@ -84,14 +84,14 @@ function BlogList({ blogHeaders, search, callbackSetSearch }: { blogHeaders: Blo
     if (blogHeaders.length === 0) {
         return (
             <div className="flex flex-col m-auto justify-center items-center">
-                <div className="flex flex-grow aspect-square justify-center items-center bg-accent-light rounded-full min-w-max">
+                <div className="flex flex-grow aspect-square justify-center items-center bg-accent rounded-full min-w-max">
                     <EmojiPuzzled className="text-7xl p-4 m-4 text-center" />
                 </div>
                 <div className="flex flex-col mt-4 items-center">
-                    <div className="flex font-bold text-secondary text-2xl">
+                    <div className="flex font-bold text-2xl">
                         No blog entries found
                     </div>
-                    <div className="flex font-medium text-secondary text-xl">
+                    <div className="flex font-medium text-xl">
                         Hit me up if you want me to write about a certain topic
                     </div>
                 </div>

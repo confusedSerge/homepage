@@ -3,37 +3,40 @@
 @layer components {
 
     .markdown-page {
-        @apply max-w-none overflow-auto font-monserrat  break-words
+        @apply max-w-none overflow-auto font-monserrat break-words text-secondary
         prose
-        prose-headings:font-bold
+        prose-headings:font-bold prose-headings:text-secondary
         prose-h1:text-3xl
         prose-h2:text-2xl 
         prose-h3:text-xl 
         
-        prose-blockquote:text-gray-500
+        prose-blockquote:text-opacity-75 prose-blockquote:text-secondary
+        prose-p:text-inherit
 
-        marker:prose-ul:text-gray-500
-        marker:prose-ol:text-gray-500
+        marker:prose-ul:text-opacity-50
+        marker:prose-ol:text-opacity-50
 
-        prose-hr:border-t-2 prose-hr:text-gray-500
+        prose-hr:border-t-2 prose-hr:text-opacity-50
 
         prose-img:mx-auto
 
-        prose-pre:bg-black
+        prose-code:text-inherit
+        prose-code:font-monserrat prose-code:font-bold 
 
-        prose-strong:font-bold
-        prose-em:italic
+        prose-a:text-secondary prose-a:underline
+        prose-strong:font-bold prose-strong:text-secondary
+        prose-em:italic prose-em:text-secondary
     }
 
     .markdown-legal {
-        @apply max-w-none overflow-auto font-monserrat  break-words
+        @apply max-w-none overflow-auto font-monserrat break-words text-secondary
         prose
-        prose-headings:font-bold
+        prose-headings:font-bold prose-headings:text-secondary
         prose-h1:text-3xl
         prose-h2:text-2xl 
         prose-h3:text-xl 
         
-        prose-blockquote:text-gray-500
+        prose-blockquote:text-opacity-50
 
         marker:prose-ul:text-gray-500
         marker:prose-ol:text-gray-500

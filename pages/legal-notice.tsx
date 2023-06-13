@@ -26,7 +26,7 @@ export default function LegalNoticePage({ de, eng }: { de: string, eng: string }
             </Head>
 
             <div className="flex relative">
-                <div className="absolute w-fit h-full -left-16 aspect-square rounded-full  bg-accent-light" />
+                <div className="absolute w-fit h-full -left-16 aspect-square rounded-full  bg-accent" />
 
                 <div className="py-8 z-10">
                     <h1 className="text-2xl sm:text-5xl font-bold">
