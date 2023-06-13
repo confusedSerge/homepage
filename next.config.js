@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+const CompressionPlugin = require('compression-webpack-plugin');
+
 const nextConfig = {
     reactStrictMode: true,
     trailingSlash: true,
@@ -6,6 +9,13 @@ const nextConfig = {
 
     images: {
         unoptimized: true,
+    },
+
+    webpack: (config) => {
+        config.plugins.push(
+            new CompressionPlugin(),
+        );
+        return config;
     },
 
 }

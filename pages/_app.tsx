@@ -18,15 +18,15 @@ export default function App({ Component, pageProps }: AppProps) {
                     <title>Kotchourko</title>
                     {/* favicon */}
                     <link rel="icon" href="/favicon.svg" />
+                    {/* Encoding */}
+                    <meta charSet='UTF-8' />
                     {/* Description */}
                     <meta name="description" content="
                         Hey there! I am Serge Kotchourko, a computer scientist from Germany.
                         I am currently pursuing my master's degree and I am passionate about all aspects of computer science.
                         This blog is my way of sharing my passion with you.
                     " />
-                    <meta name="keywords" content="
-                        Serge Kotchourko, Kotchourko Serge, Kotchourko, Serge, Computer Science, Computer Scientist, Blog, Quantum Computing, Artificial Intelligence, Information Security, Programming, Teaching, Tutoring
-                    " />
+                    <meta name="keywords" content="Serge Kotchourko, Kotchourko Serge, Kotchourko, Serge, Computer Science, Computer Scientist, Blog, Quantum Computing, Artificial Intelligence, Information Security, Programming, Teaching, Tutoring" />
                     <meta name="author" content="Serge Kotchourko" />
                     
                     {/* Open Graph */}

@@ -13,7 +13,7 @@ const Footer: React.FC<{}> = () => {
             <span className="hidden sm:flex">
                 ·
             </span>
-            <Link className="" href="/licenses">Licenses</Link>
+            <Link className="" href="/licenses" prefetch={false}>Licenses</Link>
         </div>
     );
 
