@@ -15,8 +15,8 @@ const Navbar: React.FC<{}> = () => {
             </Link>
 
             <div className="font-bold space-x-4">
-                <Link className="px-4 py-6 hover:bg-accent transition-all duration-500" href="/about">About</Link>
-                <Link className="px-4 py-6 hover:bg-accent transition-all duration-500" href="/blog">Blog</Link>
+                <Link className="px-4 py-6 rounded-md hover:bg-accent transition-all duration-500" href="/about">About</Link>
+                <Link className="px-4 py-6 rounded-md hover:bg-accent transition-all duration-500" href="/blog">Blog</Link>
             </div>
 
         </div>

@@ -39,6 +39,17 @@ module.exports = {
                 'lg': '1000px',   // tablets, small laptops
                 'xl': '1200px',   // laptops, desktops and upwards
             },
+
+            keyframes: {
+                wiggle: {
+                    '0%, 100%': { transform: 'rotate(-3deg)' },
+                    '50%': { transform: 'rotate(3deg)' },
+                },
+            },
+
+            animation: {
+                wiggle: 'wiggle 1s ease-in-out infinite',
+            },
         },
     },
     plugins: [
