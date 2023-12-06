@@ -155,8 +155,6 @@ function BlogTags({ tags, tagOnClickBehavior }: { tags: string[], tagOnClickBeha
 const BlogCard: React.FC<{ blog: BlogHead; tagOnClickBehavior: (tag: string) => void }> = ({ blog, tagOnClickBehavior }) => {
 
     return (
-
-
         <div className="w-full flex flex-col cursor-pointer overflow-hidden z-10">
 
             <Link className="group" href={`/blog/${blog.id}`} passHref>
