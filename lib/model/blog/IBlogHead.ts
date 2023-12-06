@@ -5,7 +5,7 @@ export interface IBlogHead {
 	    date: string;
         humanDate: string;
 	    readTime: string;
-        tags: string;
+        tags: string[];
 
         description: string;
 }

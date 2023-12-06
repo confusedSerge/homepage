@@ -1,6 +1,6 @@
 @tailwind base;
 
 @import "./fonts.css";
-@import "./components.css";
+@import "./markdown.css";
 @import "./utilities.css";
 @import "./katex.min.css"

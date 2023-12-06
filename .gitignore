@@ -1,5 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Ignore IDE files
+.idea
+.vscode
+.fleet
+
 # dependencies
 /node_modules
 /.pnp
@@ -46,3 +51,4 @@ next-env.d.ts
 #other resources
 /other
 /.script
+/backup

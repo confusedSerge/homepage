@@ -4,6 +4,7 @@ import Head from "next/head";
 // Lib
 import { getMarkdownFormatted } from "@/lib/util/useMarkdown";
 
+
 export default function LicensesPage({ pagedata }: { pagedata: string }) {
     return (
         <div className="h-full justify-center my-16 px-8 overflow-hidden sm:overflow-visible">

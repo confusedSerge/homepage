@@ -12,24 +12,21 @@ module.exports = {
         extend: {
             fontFamily: {
                 'monserrat': ['Montserrat', 'sans-serif'],
+                'outfit': ['Outfit', 'sans-serif'],
+                'space-grotesk': ['Space Grotesk', 'sans-serif']
             },
 
             colors: {
 
-                // White-Mode
+                // Summer Red
+                // "primary": "#f6f6f6",
+                // "secondary": "#1a1e24",
+                // "accent": "#EE6352",
+
+                // Cyan
                 "primary": "#f6f6f6",
                 "secondary": "#1a1e24",
-
-                // Dark-Mode
-                // "primary": "#1a1e24",
-                // "secondary": "#f6f6f6",
-
-                // Accent-Color
-                // "accent": "#eeffdd", // green
-                // "accent": "#fca311", // orange
-                "accent": "#EE6352", // summer-red
-                // "accent": "#EF3E36", // vermillion
-
+                "accent": "#D0FFD6",
             },
 
             screens: {
@@ -45,10 +42,17 @@ module.exports = {
                     '0%, 100%': { transform: 'rotate(-3deg)' },
                     '50%': { transform: 'rotate(3deg)' },
                 },
+
+                rotate: {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' },
+                },
+
             },
 
             animation: {
                 wiggle: 'wiggle 1s ease-in-out infinite',
+                spin: 'rotate 1.5s linear infinite',
             },
         },
     },

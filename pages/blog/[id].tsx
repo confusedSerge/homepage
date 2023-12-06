@@ -5,9 +5,12 @@ import Head from "next/head";
 import Blog from "@/lib/model/blog/Blog";
 import { getAllBlogIds, getBlog } from "@/lib/util/useBlog";
 
+// Iconoir
+import { HexagonDice } from "iconoir-react";
+
 export default function BlogPage({ blog }: { blog: Blog }) {
     return (
-        <div className="h-full justify-center my-16 px-8 overflow-hidden sm:overflow-visible">
+        <div className="w-full sm:w-2/3 h-full mx-auto my-16 px-8 overflow-hidden sm:overflow-visible">
 
             <Head>
                 <title>{"Kotchourko: " + blog.title}</title>
@@ -17,12 +20,13 @@ export default function BlogPage({ blog }: { blog: Blog }) {
                 <div className="absolute w-fit h-full -left-16 aspect-square rounded-full  bg-accent" />
 
                 <div className="py-8 z-10">
-                    <h1 className="text-5xl font-bold">{blog.title}</h1>
-
-                    <div className="flex">
-                        <div className="markdown-page" dangerouslySetInnerHTML={{ __html: blog.description }} />
+                    <div className="flex flex-row items-center">
+                        <span className="flex font-bold text-4xl underline decoration-4">
+                            {blog.title}
+                        </span>
                     </div>
-                    <div className="flex flex-row">
+
+                    <div className="flex flex-row items-center mt-2">
                         <span className="opacity-50">
                             {blog.humanDate}
                         </span>
@@ -32,21 +36,23 @@ export default function BlogPage({ blog }: { blog: Blog }) {
                         <span className="opacity-50">
                             {blog.readTime} read
                         </span>
-                        <span className="px-2 opacity-50 hidden sm:flex">
-                            ·
-                        </span>
-                        <span className="hidden sm:flex">
-                            <span className="opacity-50 mr-2">
-                                Tags:
-                            </span>
-                            {blog.tags.map((tag) => {
-                                return (
-                                    <span key={blog.id.toString() + tag} className="cursor-default bg-black bg-opacity-5 hover:bg-accent transition-all duration-500 rounded-full px-2 mr-2">
-                                        {tag}
-                                    </span>
-                                )
-                            })}
-                        </span>
+                    </div>
+
+
+                    <div className="flex">
+                        <div className="markdown-preview" dangerouslySetInnerHTML={{ __html: blog.description }} />
+                    </div>
+
+                    <div className="flex text-md mt-2 items-center">
+                        <span className="font-medium mr-2"> Tags: </span>
+                        <div className="flex flex-wrap items-center">
+                            {blog.tags.map((tag) => (
+                                <div key={tag} className="flex flex-row items-center cursor-default px-2 m-1 border-2 border-secondary rounded-full group ">
+                                    <HexagonDice className="w-2 h-2 mr-1 stroke-2 group-hover:animate-spin" />
+                                    {tag}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -18,25 +18,27 @@ const blogDirectory = path.join(process.cwd(), 'data/blog');
 export function getSortedBlogHeaders() {
     const fileNames = fs.readdirSync(blogDirectory);
 
-    return fileNames.map(fileName => {
-        const fullPath = path.join(blogDirectory, fileName);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
+    // filter out .ignore files
+    return fileNames.filter(fileName => !fileName.startsWith('.')).
+        map(fileName => {
+            const fullPath = path.join(blogDirectory, fileName);
+            const fileContents = fs.readFileSync(fullPath, 'utf8');
 
-        const matterResult = { ...matter(fileContents).data } as IBlogHead;
-        return new BlogHead(fileName.replace(/\.md$/, ''), matterResult.title, matterResult.date, matterResult.humanDate, matterResult.readTime, matterResult.tags.split(','),
-            micromark(matterResult.description, {
-                extensions: [gfm(), math()],
-                htmlExtensions: [gfmHtml(), mathHtml()],
-                allowDangerousHtml: true
-            }));
-    }).sort(({ date: a }, { date: b }) => {
-        return (a > b) ? 1 : -1;
-    }).reverse();
+            const matterResult = { ...matter(fileContents).data } as IBlogHead;
+            return new BlogHead(fileName.replace(/\.md$/, ''), matterResult.title, matterResult.date, matterResult.humanDate, matterResult.readTime, matterResult.tags,
+                micromark(matterResult.description, {
+                    extensions: [gfm(), math()],
+                    htmlExtensions: [gfmHtml(), mathHtml()],
+                    allowDangerousHtml: true
+                }));
+        }).sort(({ date: a }, { date: b }) => {
+            return (a > b) ? 1 : -1;
+        }).reverse();
 }
 
 export function getAllBlogIds() {
     const fileNames = fs.readdirSync(blogDirectory);
-    return fileNames.map(fileName => {
+    return fileNames.filter(fileName => !fileName.startsWith('.')).map(fileName => {
         return {
             params: {
                 id: fileName.replace(/\.md$/, '')
@@ -50,7 +52,7 @@ export async function getBlog(id: string) {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     const matterResult = { ...matter(fileContents).data } as IBlogHead;
-    return new Blog(id, matterResult.title, matterResult.date, matterResult.humanDate, matterResult.readTime, matterResult.tags.split(','),
+    return new Blog(id, matterResult.title, matterResult.date, matterResult.humanDate, matterResult.readTime, matterResult.tags,
         micromark(matterResult.description, {
             extensions: [gfm(), math()],
             htmlExtensions: [gfmHtml(), mathHtml()],
