@@ -12,7 +12,6 @@ module.exports = {
         extend: {
             fontFamily: {
                 'monserrat': ['Montserrat', 'sans-serif'],
-                'outfit': ['Outfit', 'sans-serif'],
                 'space-grotesk': ['Space Grotesk', 'sans-serif']
             },
 
@@ -25,8 +24,8 @@ module.exports = {
 
                 // Cyan
                 "primary": "#f6f6f6",
-                "secondary": "#1a1e24",
-                "accent": "#D0FFD6",
+                "secondary": "#151515",
+                "accent": "#15B097",
             },
 
             screens: {
