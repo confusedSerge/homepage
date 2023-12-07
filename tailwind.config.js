@@ -25,7 +25,7 @@ module.exports = {
                 // Cyan
                 "primary": "#f6f6f6",
                 "secondary": "#151515",
-                "accent": "#15B097",
+                "accent": "#d0ffd6",
             },
 
             screens: {
