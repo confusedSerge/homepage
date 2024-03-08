@@ -10,7 +10,7 @@ import { HexagonDice } from "iconoir-react";
 
 export default function BlogPage({ blog }: { blog: Blog }) {
     return (
-        <div className="w-full sm:w-2/3 h-full mx-auto my-16 px-8 overflow-hidden sm:overflow-visible">
+        <div className="w-full sm:w-4/5 xl:w-2/3 h-full mx-auto my-16 px-8 overflow-hidden sm:overflow-visible">
 
             <Head>
                 <title>{"Kotchourko: " + blog.title}</title>

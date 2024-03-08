@@ -11,8 +11,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'monserrat': ['Montserrat', 'sans-serif'],
-                'space-grotesk': ['Space Grotesk', 'sans-serif']
+                'space-grotesk': ['Space Grotesk', 'sans-serif'],
             },
 
             colors: {
@@ -26,6 +25,11 @@ module.exports = {
                 "primary": "#f6f6f6",
                 "secondary": "#151515",
                 "accent": "#d0ffd6",
+
+                // Orange
+                // "primary": "#f6f6f6",
+                // "secondary": "#151515",
+                // "accent": "#FFA630",
             },
 
             screens: {
