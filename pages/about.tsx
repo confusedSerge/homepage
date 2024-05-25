@@ -16,10 +16,9 @@ export default function About() {
             <div className="flex flex-col-reverse xl:flex-row items-center">
 
                 <div className="mt-4 xl:mt-0 xl:mr-16 p-4 text-2xl">
-                    Hi there! My name is Serge Kotchourko and I am a computer science student from Germany currently pursuing my master&apos;s degree.
-                    I am passionate about all aspects of computer science, but I am especially interested in the theoretical side of things.
-                    Currently my main focus is on the field of information security, quantum computing and artificial intelligence,
-                    as I find these topics particularly interesting because their potential is enormous and growing in importance every day.
+                    Hello! I&apos;m Serge, a computer science student from Germany working on my master&apos;s degree. <br />
+                    I&apos;m passionate about various areas of computer science, but I&apos;m particularly interested in its theoretical aspects. <br />
+                    Currently, I&apos;m focusing on information security and artificial intelligence, as I find the complexity and challenges in these fields fascinating. <br />
                 </div>
 
                 <div className="flex w-48 h-48 2xl:w-72 2xl:h-72 aspect-square justify-center items-center bg-accent rounded-full">
@@ -35,9 +34,10 @@ export default function About() {
                 </div>
 
                 <div className="mt-4 xl:mt-0 xl:ml-16 p-4 text-2xl">
-                    Early in my studies I started to work as an academic tutor for my university, during which I found my passion for teaching, 
-                    especially explaining complex topics in a simple and understandable way, but also deepening my own understanding in the process and finding new ways to think about it.
-                    This is the main reason why I decided to start this blog, to share this enjoyment.
+                    During my early years at the university, I had the opportunity to work as an academic tutor. <br />
+                    Through this, I found my passion for teaching, especially explaining complex topics in a simple and understandable way. <br />
+                    This process deepened my own understanding and motivated me to explore fresh perspectives and think critically. <br />
+                    This experience has been invaluable to me. It has shaped my approach to learning and teaching and has driven my decision to start this blog. <br />
                 </div>
 
             </div>

@@ -17,4 +17,8 @@
     .katex-display {
         @apply prose overflow-x-scroll
     }
+
+    mark {
+        @apply bg-accent
+    }
 }
