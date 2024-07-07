@@ -34,10 +34,9 @@ export default function About() {
                 </div>
 
                 <div className="mt-4 xl:mt-0 xl:ml-16 p-4 text-2xl">
-                    During my early years at the university, I had the opportunity to work as an academic tutor. <br />
-                    Through this, I found my passion for teaching, especially explaining complex topics in a simple and understandable way. <br />
-                    This process deepened my own understanding and motivated me to explore fresh perspectives and think critically. <br />
-                    This experience has been invaluable to me. It has shaped my approach to learning and teaching and has driven my decision to start this blog. <br />
+                    During my times as an academic tutor, I found joy in making complex concepts and ideas accessible to others. <br />
+                    This blog is my attempt to translate this excitement into written form. <br />
+                    To this end, I write about topics that I find interesting and that I believe others might enjoy as well. <br />
                 </div>
 
             </div>

@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Head>
                     <title>Kotchourko</title>
                     {/* favicon */}
-                    <link rel="icon" href="/favicon.svg" />
+                    <link rel="icon" href="/favicon.gif" />
                     {/* Encoding */}
                     <meta charSet='UTF-8' />
                     {/* Description */}
